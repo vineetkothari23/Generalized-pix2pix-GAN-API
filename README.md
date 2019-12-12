@@ -12,18 +12,24 @@ Aerial images to simplified map images.
 Animation and images here:
 
 ## Theoritical details
+## Architecture
+
 ## Data
 ## Implementation details
 ### Modules
 ### Data 
+### Architecture
 ### Code structure
 ### Visualization and analysis details
 ## Prerequisites
+
+## Usage
 ### Installation
+### Requirements
 ### Directory structure
 ### Train/ test
 ### Using a pretrained model
-## Usage
+
 ## Results
 ## Distributed training and testing
 ## Docker
