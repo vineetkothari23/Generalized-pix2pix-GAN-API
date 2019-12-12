@@ -18,11 +18,24 @@ Animation and images here:
 
 #### Installation
 #### Requirements
-Python 3.5+
-PyTorch 0.3.0
+- Python 3.5+
+- PyTorch 0.3.0
  
 #### Directory structure
-The directory structure is followed as
+The directory structure is followed as 
+```
+.
+├── ...
+├── version_no                    # Version of different models and training process
+│   ├── model          # saved model checkpoint files
+│   ├── report         # reporting of final training, validation loss and other metrics
+│   └── output          # Output directory
+│       └── epoch                    # Storing the training epoch images
+├── data                    # Dataset of images (Optional)
+├── res                # Resources directory
+│    └── Helvetica                    # Font file to generate paired images for training (optional) 
+└── ...
+```
 
 #### Train/ test
 1. Clone the repository
@@ -47,7 +60,7 @@ $ cd report
 ```
 
 #### Using a pretrained model weights
-Download the model weights as .ckpt file in "./model/"
+Download the model weights as .ckpt file in "./model/" and hit the same commands to train and test with the correct root directory.
 
 ## Results
 
