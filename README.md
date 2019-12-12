@@ -11,23 +11,20 @@ Denoising images.
 Aerial images to simplified map images.
 Animation and images here:
 
-## Theoritical details
-## Architecture
 
-## Data
-## Implementation details
-### Modules
-### Data 
 ### Architecture
-### Code structure
-### Visualization and analysis details
-## Prerequisites
+### Prerequisites
+### Usage
 
-## Usage
-### Installation
-### Requirements
-### Directory structure
-### Train/ test
+#### Installation
+#### Requirements
+Python 3.5+
+PyTorch 0.3.0
+ 
+#### Directory structure
+The directory structure is followed as
+
+#### Train/ test
 1. Clone the repository
 ```
 $ git clone https://github.com/MicroprocessorX069/Generalized-pix2pix-GAN-API.git
@@ -38,21 +35,31 @@ $ cd Generalized-pix2pix-GAN-API
 ```
 $ python python train.py --root_dir "./" --version "1.0" --batch_size 64 --input_width 32 --input_height 32 
 ```
+(ii) Test
+'''
+$ python python test.py --root_dir "./" --version "1.0" 
+'''
 4. Enjoy the results
 ```
 $ cd output/epoch
-```
 or
-```
 $ cd report
 ```
 
-### Using a pretrained model weights
-Download the model weights as .ckpt file. 
+#### Using a pretrained model weights
+Download the model weights as .ckpt file in "./model/"
 
 ## Results
 
-## Distributed training and testing
+## Implementation details
+- [Theoritical details](docs/CONTRIBUTING.md)
+- [Modules](docs/CONTRIBUTING.md)
+- [Data](docs/CONTRIBUTING.md)
+- [Architecture](docs/CONTRIBUTING.md)
+- [Code structure](docs/CONTRIBUTING.md)
+- [Distributed training](docs/CONTRIBUTING.md)
+- [Docker](docs/CONTRIBUTING.md)
+
 ## Docker
 ## Related projects
 ## Acknowledgements
