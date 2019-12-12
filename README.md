@@ -28,9 +28,24 @@ Animation and images here:
 ### Requirements
 ### Directory structure
 ### Train/ test
-### Using a pretrained model
+1. Clone the repository
+$ git clone https://github.com/MicroprocessorX069/Generalized-pix2pix-GAN-API.git
+$ cd Generalized-pix2pix-GAN-API
+
+3. Train
+(i) Train
+$ python python main.py --root_dir "./" --version "1.0" --batch_size 64 --input_width 32 --input_height 32 
+
+4. Enjoy the results
+$ cd output/epoch
+or
+$ cd report
+
+### Using a pretrained model weights
+Download the model weights as .ckpt file. 
 
 ## Results
+
 ## Distributed training and testing
 ## Docker
 ## Related projects
