@@ -124,5 +124,9 @@ def random_fliplr(imgs1, imgs2):
         else:
             outputs1[i] = imgs1[i]
             outputs2[i] = imgs2[i]
+			
+def make_folder(path, version):
+        if not os.path.exists(os.path.join(path, version)):
+            os.makedirs(os.path.join(path, version))
 
     return outputs1, outputs2

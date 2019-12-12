@@ -21,13 +21,20 @@ from tornado import gen
 import time
 import pickle
 from tqdm import tqdm
-from utils import show_result,show_train_hist,generate_animation,data_load,imgs_resize, random_crop, random_fliplr
+from utils import show_result,show_train_hist,generate_animation,data_load,imgs_resize, random_crop, random_fliplr,make_folder
 from data_loader import localImageDataset
 from model import generator, discriminator, normal_init
 
 def train_process(config):
   
   root_dir=config.root_dir
+  input_dir=root_dir+"data/augmented/"
+  version=config.version
+  root_dir=make_folder(root_dir, version)
+  model_dir=make_folder(root_dir, "model/")
+  report_dir=make_folder(root_dir,root_dir+"report/")
+  output_dir=make_folder(root_dir,"output/epoch/")
+  res_dir=make_folder(root_dir,root_dir+"res/")
   inp_width, inp_height, inp_channels,train_split=config.inp_width, config.inp_height, config.inp_channels,config.train_split
   # model parameters
   lrG=config.lrG

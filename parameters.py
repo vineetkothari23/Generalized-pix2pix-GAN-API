@@ -8,11 +8,7 @@ def get_parameters():
     parser = argparse.ArgumentParser()
 
     parser.add_argument('--root_dir', type=str, default="")
-    parser.add_argument('--output_dir', type=str, default=root_dir+"output/epoch/")
-    parser.add_argument('--input_dir', type=str, default=root_dir+"data/augmented/")
-    parser.add_argument('--model_dir', type=str, default=root_dir+"model/")
-    parser.add_argument('--res_dir', type=str, default=root_dir+"res/")
-    parser.add_argument('--report_dir', type=str, default=root_dir+"report/")
+    parser.add_argument('--version', type=str, default="1.0")
 
     #train setting
     parser.add_argument('--batch_size', type=int, default=1)
