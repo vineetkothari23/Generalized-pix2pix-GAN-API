@@ -63,7 +63,7 @@ $ cd report
 Download the model weights as .ckpt file in "./model/" and hit the same commands to train and test with the correct root directory.
 
 ## Results
-![Training gif](link)
+![Training gif](https://github.com/MicroprocessorX069/Generalized-pix2pix-GAN-API/blob/master/training_process.GIF)
 ## Implementation details
 - [Theoritical details](docs/CONTRIBUTING.md)
 - [Modules](docs/CONTRIBUTING.md)
