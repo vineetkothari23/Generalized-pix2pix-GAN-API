@@ -63,7 +63,7 @@ $ cd report
 Download the model weights as .ckpt file in "./model/" and hit the same commands to train and test with the correct root directory.
 
 ## Results
-
+![Training gif](link)
 ## Implementation details
 - [Theoritical details](docs/CONTRIBUTING.md)
 - [Modules](docs/CONTRIBUTING.md)
