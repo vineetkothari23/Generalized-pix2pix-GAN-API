@@ -28,7 +28,7 @@ from model import generator, discriminator, normal_init
 def train_process(config):
   
   root_dir=config.root_dir
-  input_dir=root_dir+"data/augmented/"
+  input_dir=os.path.join(root_dir+"data/")
   version=config.version
   root_dir=make_folder(root_dir, version)
   model_dir=make_folder(root_dir, "model/")
