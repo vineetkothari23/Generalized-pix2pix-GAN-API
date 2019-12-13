@@ -11,12 +11,28 @@ Denoising images.
 Aerial images to simplified map images.
 Animation and images here:
 
+## Examples 
+- Converting lower case text image into upper case.
+
+![lower2upper](https://github.com/MicroprocessorX069/Generalized-pix2pix-GAN-API/blob/master/documentation/image%20res/p2p%20examples.PNG)
+
+- Training gif of changing the background color of different text images.
+
+![Training gif](https://github.com/MicroprocessorX069/Generalized-pix2pix-GAN-API/blob/master/training_process.GIF)
+
+- Examples from the paper
+
+![Paper examples]()
 
 ### Architecture
-### Prerequisites
+
+Generator architecture
+
+![G architecture](https://github.com/MicroprocessorX069/Generalized-pix2pix-GAN-API/blob/master/documentation/image%20res/generator_p2p.PNG)
+
+
 ### Usage
 
-#### Installation
 #### Requirements
 - Python 3.5+
 - PyTorch 0.3.0
@@ -62,15 +78,13 @@ $ cd report
 #### Using a pretrained model weights
 Download the model weights as .ckpt file in "./model/" and hit the same commands to train and test with the correct root directory.
 
-## Results
-![Training gif](https://github.com/MicroprocessorX069/Generalized-pix2pix-GAN-API/blob/master/training_process.GIF)
 ## Implementation details
 - [Theoritical details](docs/CONTRIBUTING.md)
 - [Modules](docs/CONTRIBUTING.md)
 - [Data](docs/CONTRIBUTING.md)
-- [Architecture](docs/CONTRIBUTING.md)
+- [Architecture](documentation/architecture.md)
 - [Code structure](docs/CONTRIBUTING.md)
-- [Distributed training](docs/CONTRIBUTING.md)
+- [Training on Google cloud](documentation/gcp_training.md)
 - [Docker](docs/CONTRIBUTING.md)
 
 ## Docker
