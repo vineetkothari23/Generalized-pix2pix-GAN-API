@@ -33,14 +33,4 @@ def get_parameters():
     # # using pretrained
     # parser.add_argument('--pretrained_model', type=int, default=None)
 
-    # # Misc
-    # parser.add_argument('--train', type=str2bool, default=True)
-    # parser.add_argument('--parallel', type=str2bool, default=False)
-    # parser.add_argument('--dataset', type=str, default='cifar', choices=['lsun', 'celeb'])
-    # parser.add_argument('--use_tensorboard', type=str2bool, default=False)
-
-    # # Step size
-    # parser.add_argument('--log_step', type=int, default=10)
-    # parser.add_argument('--sample_step', type=int, default=100)
-    # parser.add_argument('--model_save_step', type=float, default=1.0)
     return parser.parse_args()
